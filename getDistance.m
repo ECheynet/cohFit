@@ -1,4 +1,13 @@
 function [d,indZ] = getDistance(z)
+%  [d,indZ] = getDistance(z) get distance d between two locations and the
+%  associated indices indZ. This functions can help to speed up the computation
+%  of the co-coherence of turbulence by avoiding redundant pairs of
+%  sensors.
+%% Author info
+%  E. Cheynet - UiB - last modified: 25-05-2022
+%
+% See also coh4Para cpsd pwelch coherence cohere targetCoh getDistance
+
 
 Nm = numel(z);
 indZ = zeros(Nm,Nm,2);

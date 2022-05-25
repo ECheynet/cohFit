@@ -1,4 +1,12 @@
 function [cohU] = targetCoh(U,d,f,z,c,type,varargin)
+% [cohU] = targetCoh(U,d,f,z,c,type,varargin) computes the coherence from
+% three empirical models (Davenport, Bowen or modified Bowen model
+% 'Bowen2'). This function is only used to illustrate the function cohFit.m
+%
+%% Author info
+%  E. Cheynet - UiB - last modified: 25-05-2022
+%
+% See also coh4Para cpsd pwelch coherence cohere targetCoh getDistance
 
 %% Inputparseer
 p = inputParser();
@@ -11,17 +19,20 @@ if isempty(dx)
     dx = zeros(size(d));
 end
 %%
-
-
-Nm = numel(d);
-Nf = numel(f);
+% the Davenport model  uses only the first element of the  vector c
+% the Bowen model  use  only the first two elements of the  vector c
+% the modified Bowen model  uses  the three elements of the  vector c
 
 if strcmpi(type,'Davenport')
-    c(2:3) = 0;
+    c(2:3) = 0; 
 elseif  strcmpi(type,'Bowen')
     c(3) = 0;    
 end
 
+
+%% Loop over each separation distance
+Nm = numel(d);
+Nf = numel(f);
 cohU = zeros(Nm,Nf);
 for pp = 1:Nm
     A = c(1).*f;
