@@ -1,4 +1,8 @@
 # cohFit
+
+[![DOI](https://zenodo.org/badge/496147545.svg)](https://zenodo.org/badge/latestdoi/496147545)
+
+
 A set of Matlab functions to fit the co-coherence of turbulence with empirical models.
 
 ## Summary
