@@ -1,4 +1,4 @@
-# cohFit
+# Fitting the co-coherence of turbulence
 
 [![DOI](https://zenodo.org/badge/496147545.svg)](https://zenodo.org/badge/latestdoi/496147545)
 [![View Fitting the co-coherence of turbulence on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://se.mathworks.com/matlabcentral/fileexchange/112180-fitting-the-co-coherence-of-turbulence)
