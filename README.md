@@ -3,17 +3,16 @@
 [![DOI](https://zenodo.org/badge/496147545.svg)](https://zenodo.org/badge/latestdoi/496147545)
 [![View Fitting the co-coherence of turbulence on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://se.mathworks.com/matlabcentral/fileexchange/112180-fitting-the-co-coherence-of-turbulence)
 
-A set of Matlab functions to fit the co-coherence of turbulence with empirical models.
 
 ## Summary
 
-The Matlab function cohFit uses a least-square fit approach to fit an empirical co-coherence model to the one estimated from measurements. It considers multiple distance and frequencies at the same time, so it is a surface fit. It should be applied either to pure lateral, vertical or longitudinal spatial separation to reduce the propagation of uncertainties and the risk of overfitting. In the present version, three empirical models are used: the Davenport model [2], the so-called Bowen model [3] and the modified Bowen model [1]. These three models can be applied for wind load modelling on structures, e.g. Wind turbines, high rise buildings or long-span bridges. The present routines have been applied in ref [1], but also refs [4,5,6] among others. This is the first version of the repository. Some bugs may still be present. Feel free to contact me if you have any question.
+The Matlab function cohFit uses a least-square fit approach to fit an empirical co-coherence model to the one estimated from measurements. It considers multiple distances and frequencies at the same time, so it is a surface fit. It should be applied either to pure lateral, vertical or longitudinal spatial separation to reduce the propagation of uncertainties and the risk of overfitting. In the present version, three empirical models are used: the Davenport model [2], the so-called Bowen model [3] and the modified Bowen model [1]. These three models can be applied for wind load modelling on structures, e.g. Wind turbines, high-rise buildings or long-span bridges. The present routines have been applied in ref [1] but also refs [4,5,6] among others. This is the first version of the repository. Some bugs may still be present. Feel free to contact me if you have any questions.
 
 ## Content
 
 The present repository contains:
   - a .mat file timeSeries.ma tused in the documentation
-  - A Matlab livescript Documentation.mlx
+  - A Matlab LiveScript Documentation.mlx
   - The function coherence.m is used to estimate the co-coherence and quad-coherence of turbulence
   - The function label to write some text in subpanels
   - The function targetCoh.m, which is only used in the documentation for the idealized cases
